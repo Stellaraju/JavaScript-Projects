@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#countdownContainer {
+    margin-bottom: 40px;
+}
+
+#slideshow {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slideshow img {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide all images by default */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
