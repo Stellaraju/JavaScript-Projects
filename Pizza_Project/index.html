@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel="stylesheet" href="file:///Users/rajumichael/Documents/GitHub/JavaScript-Projects/Pizza_Project/Pizza_CSS/Pizza.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Pizza Menu</h2>
+        <div class="pizza-category" id="classic-pizzas">
+            <h3>Classic Pizzas</h3>
+            <div class="pizza-item">
+                <h4>Margherita</h4>
+                <p>Tomato sauce, mozzarella cheese, fresh basil</p>
+                <button onclick="addToCart('Margherita', 10)">Add to Cart - $10</button>
+            </div>
+            <div class="pizza-item">
+                <h4>Pepperoni</h4>
+                <p>Tomato sauce, mozzarella, pepperoni</p>
+                <button onclick="addToCart('Pepperoni', 12)">Add to Cart - $12</button>
+            </div>
+            <!-- Add more classic pizzas here -->
+        </div>
+
+        <div class="pizza-category" id="specialty-pizzas">
+            <h3>Specialty Pizzas</h3>
+            <div class="pizza-item">
+                <h4>BBQ Chicken</h4>
+                <p>BBQ sauce, grilled chicken, mozzarella</p>
+                <button onclick="addToCart('BBQ Chicken', 15)">Add to Cart - $15</button>
+            </div>
+            <div class="pizza-item">
+                <h4>Buffalo Chicken</h4>
+                <p>Buffalo sauce, grilled chicken, blue cheese</p>
+                <button onclick="addToCart('Buffalo Chicken', 14)">Add to Cart - $14</button>
+            </div>
+            <!-- Add more specialty pizzas here -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <p>No items added to the cart yet.</p>
+        </div>
+        <p id="total-price">Total: $0</p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizza Delight</p>
+    </footer>
+
+    <script src="file:///Users/rajumichael/Documents/GitHub/JavaScript-Projects/Pizza_Project/Pizza_JavaScript/Pizza.js"></script>
+</body>
+</html>
