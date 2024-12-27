@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Event and Effect Example</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Style for the effect */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+            text-align: center;
+            padding-top: 70px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to JQuery</h1>
+
+    <!-- HTML content -->
+    <button id="fadeButton">Click to Fade Box</button>
+    <div class="box" id="box">Hello, World!</div>
+
+    <script>
+        $(document).ready(function() {
+
+            // jQuery Event: Click Event
+            $('#fadeButton').click(function() {
+                // jQuery Effect: Fade Out
+                $('#box').fadeOut(1000, function() {
+                    $(this).text('Box Faded Out');
+                    // jQuery Effect: Fade In
+                    $(this).fadeIn(1000);
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>
