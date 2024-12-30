@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Registration</title>
+    <!-- Bootstrap 4 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Academy Cinema Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#movies">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron text-center">
+        <h1>Welcome to Cinema Booking</h1>
+        <p>Your one-stop place for movie registrations</p>
+    </header>
+
+    <!-- Movies Section -->
+    <section id="movies" class="container py-5">
+        <h2 class="text-center">Available Movies</h2>
+        <div class="row">
+            <!-- Movie 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="file:///Users/rajumichael/Documents/GitHub/HTML-and-CSS-Projects/Projects/Images/A1.jpeg" class="card-img-top" alt="Movie 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Titanic</h5>
+                        <p class="card-text"> It's an romantic and love!</p>
+                        <button class="btn btn-primary movie-register" data-movie="Movie Title 1">Register</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="file:///Users/rajumichael/Documents/GitHub/HTML-and-CSS-Projects/Projects/Images/A2.jpeg" class="card-img-top" alt="Movie 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Matrix</h5>
+                        <p class="card-text">This is a action based movie!</p>
+                        <button class="btn btn-primary movie-register" data-movie="Movie Title 2">Register</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="file:///Users/rajumichael/Documents/GitHub/HTML-and-CSS-Projects/Projects/Images/A4.jpeg" class="card-img-top" alt="Movie 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Behilu</h5>
+                        <p class="card-text">It's an action-packed thriller that will keep you on the edge of your seat.</p>
+                        <button class="btn btn-primary movie-register" data-movie="Movie Title 3">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="container py-5">
+        <h2 class="text-center">Register for a Movie</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="movie">Select Movie</label>
+                <select class="form-control" id="movie" required>
+                    <option value="">Select a movie</option>
+                    <option value="Movie Title 1">Titanic</option>
+                    <option value="Movie Title 2">Matirx</option>
+                    <option value="Movie Title 3">Behilu</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Register</button>
+        </form>
+        <div id="registration-message" class="mt-4" style="display: none;">
+            <div class="alert alert-success" role="alert">
+                You have successfully registered for <span id="registered-movie"></span>!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Cinema Booking</p>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script1.js"></script>
+</body>
+</html>
